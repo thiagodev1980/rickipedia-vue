@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import CharacterListView from '../views/CharacterListView.vue'
-import CharacterDetailView from '../views/CharacterDetailView.vue'
+import ListaPersonagens from '../views/ListaPersonagens.vue'
+import DetalhesPersonagem from '../views/DetalhesPersonagem.vue'
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', component: CharacterListView },
-    { path: '/character/:id', component: CharacterDetailView },
+    { path: '/', component: ListaPersonagens },
+    { path: '/personagem/:id', component: DetalhesPersonagem },
   ],
 })
 
